@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<div class="login-page">
+    	<div class="form">
+        	<form class="register-form">
+            	<input type="text" placeholder="Tên đăng nhập: " />
+                <input type="password" placeholder="Mật khẩu: " />
+                <input type="email" placeholder="Email: " />
+                <button>Xác nhận</button>
+                
+                <p class="message">Đã có tài khoản? <a href="#">Đăng nhập</a></p>
+            </form>
+            <form class="login-form">
+            	<input type="text" placeholder="Tên đăng nhập: " />
+                <input type="password" placeholder="Mật khẩu: " />
+                
+                <button>Đăng nhập</button>
+                <p class="message">Chưa có tài khoản? <a href="#">Đăng ký</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js';></script>
+    <script>
+    	$('.message a').click(function(){
+		$('form').animate({height: "toggle", opacity: "toggle"}, "slow");		
+		});
+    </script>
+	
+
+</body>
+</html>
